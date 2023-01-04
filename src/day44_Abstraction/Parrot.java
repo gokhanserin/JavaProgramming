@@ -1,6 +1,6 @@
 package day44_Abstraction;
 
-public final class Parrot extends Animal{
+public final class Parrot extends Animal implements Playable, Flyable{
 
 
     public Parrot(String name, String breed, char gender, int age, String size, String color) {
@@ -13,4 +13,13 @@ public final class Parrot extends Animal{
     }
 
 
+    @Override
+    public void play() {
+        System.out.println(getName() + " is playing with mirror");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println(getName() + " can fly 20km/h");
+    }
 }
