@@ -14,7 +14,7 @@ public class Square extends Shape {
     }
 
     public void setside(double side) {
-        if (side >=0){
+        if (side <=0){
             throw new RuntimeException("Invalid side: " + side);
         }
         this.side = side;
