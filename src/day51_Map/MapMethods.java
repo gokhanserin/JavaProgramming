@@ -29,7 +29,7 @@ public class MapMethods {
 
         System.out.println(students.get("Alex"));
 
-        // replace the core of Ali
+        // replace the score of Ali
 
         students.replace("Ali", 90);
 

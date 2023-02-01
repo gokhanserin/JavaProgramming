@@ -38,7 +38,8 @@ public class NestedMap {
 
         System.out.println("------------------------------------");
 
-        System.out.println(mapOfMap.get(map1).get("Veronica"));
+        System.out.println(mapOfMap.get(map1).get("Veronica"));  // get(map1) returns the value that is map2
+                                                                // In map2, get(Veronica) returns its value 115000
 
         System.out.println("-------------------------------------");
 

@@ -38,15 +38,32 @@ public class ListSetPractice {
 
         System.out.println("chars = " + chars);
 
+        // PUSH --> Adds element to the end
+
+        ((Stack) chars).push('Z');
+
+        System.out.println("chars = " + chars);
+
+        // PEEK --> Returns the element at the top of stack
+
+        System.out.println(((Stack<Character>) chars).peek());
+
+
         // poll -- > FIFO
 
         List <String> names = new LinkedList<>();
         names.addAll(Arrays.asList("Noris", "Martin","Ricky","John", "Bart", "Kelly"));
         System.out.println(names);
 
-        ((LinkedList)names).poll();
+        ((LinkedList)names).poll();  // comes from the Queue by inheritance
 
         System.out.println(names);
+
+        ((LinkedList<String>) names).push("Amelia");
+
+        System.out.println("names = " + names);
+
+        System.out.println(((LinkedList<String>) names).peek());
 
     }
 

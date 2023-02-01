@@ -9,12 +9,12 @@ public class SetPractice2 {
         String[] arr = {"Wooden Spoon", "Book", "Pen", "Phone", "Wooden Spoon",
                 "Wooden Spoon", "Wooden Spoon", "Wooden Spoon", "Milk", "Eggs", "Coke", "Paper towels"};
 
-        arr = new HashSet <> (Arrays.asList(arr)).toArray(new String[0]);
-
+        arr = new HashSet <> (Arrays.asList(arr)).toArray(new String[0]);  // removing duplicates from the array
+        // by using HashSet class. First, array was converted to hashset then hashset was converted to array.
         System.out.println(Arrays.toString(arr));
 
         /*
-        Set <String> set1 = new HashSet<>(Arrays.asList(arr));
+        Set <String> set1 = new HashSet<>(Arrays.asList(arr));   // easier way for the above method
         set1.toArray(new String[0]);
 
         System.out.println("set1 = " + set1);
@@ -63,6 +63,7 @@ public class SetPractice2 {
 
         for ( String each : new LinkedHashSet<>(Arrays.asList(str.split("")))){
             result+= each + Collections.frequency(Arrays.asList(str.split("")),each);
+
         }
         System.out.println(result);
 
@@ -71,9 +72,10 @@ public class SetPractice2 {
         Set<String> names = new LinkedHashSet<>();
         names.addAll(Arrays.asList("Ahmet", "Ahmet", "John", "James", "Breanna", "Shay", "Ahmet"));
 
-        System.out.println(names.toArray(new String[0])[2]);
 
-        System.out.println(new ArrayList<>(names).get(4));
+        System.out.println(names.toArray(new String[0])[2]);  // converting LinkedHashSet to Array
+
+        System.out.println(new ArrayList<>(names).get(4));  // converting LinkedHashSet to ArrayList
 
     }
 

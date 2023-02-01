@@ -34,7 +34,9 @@ public class ListIntro {
 
         System.out.println(list4);
 
+        ((Stack<Integer>) list4).push(100);
 
+        System.out.println("list4 = " + list4);
 
 
     }

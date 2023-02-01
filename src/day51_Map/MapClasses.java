@@ -30,7 +30,7 @@ public class MapClasses {
         treeMap.put(3, "Jack");
         treeMap.put(40, "Emma");
         treeMap.put(5, "Ahmet");
-        treeMap.put(5, "Isabella");
+        treeMap.put(4, "Isabella");
         treeMap.put(7, null);
        // treeMap.put(null, "Hulya");
 
@@ -43,7 +43,7 @@ public class MapClasses {
         linkedHashMap.put(3, "Jack");
         linkedHashMap.put(40, "Emma");
         linkedHashMap.put(5, "Ahmet");
-        linkedHashMap.put(5, "Isabella");
+        linkedHashMap.put(5, null);
         linkedHashMap.put(null, "Hulya");
 
         System.out.println("linkedHashMap = " + linkedHashMap);
